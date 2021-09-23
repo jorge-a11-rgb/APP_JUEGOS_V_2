@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div #titulo>
+      <ion-title>M E N U</ion-title>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div #titulo3 class="ion-padding-top ion-text-center">
+      <p *ngIf="usuario">Holaa!! {{ usuario }}</p>
+</div>
+  <ion-label class="ion-padding-top ion-text-center">
+    <h1>
+      Elige una opcion del menu
+    </h1>
+  </ion-label>
+  <ion-label class="ion-padding-top ion-text-center">
+    <p>
+      Podras ver y hacer
+    </p>
+  </ion-label>
+
+
+      <div class="ion-padding-top ion-text-center">
+      <img src='assets/IMG/ps5.jpg' style='width: 50% ; border: 2px solid rgb(255, 255, 255)'>
+      </div>
+      <div class="ion-padding-top ion-text-center">
+        <ion-button [routerLink]="['/juegos']">Mejores juegos</ion-button>
+      </div>
+      <div class="ion-padding-top ion-text-center">
+        <ion-button [routerLink]="['/comprador']">Registrar datos comprador</ion-button>
+      </div>
+      <div class="ion-padding-top ion-text-center">
+        <ion-button [routerLink]="['/elgir-juego']">Elegir juego</ion-button>
+      </div>
+
+
+      <ion-row class="ion-padding-top ion-text-center">
+        <ion-col size="12">
+
+
+    <ion-button [routerLink]="['/camara']">Escanear codigo QR</ion-button>
+
+        </ion-col>
+      </ion-row>
+
+
+
+
+
+      <div class="ion-padding-top ion-text-center">
+        <ion-button [routerLink]="['/login']">Volver</ion-button>
+      </div>
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+
+    <div #titulo2>
+      <ion-title class="ion-text-left ion-text">
+        Menu de navegacion
+      </ion-title>
+    </div>
+
+
+
+
+
+  </ion-toolbar>
+</ion-footer>

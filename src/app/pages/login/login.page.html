@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>App juegos epicos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div>
+    <ion-title class="ion-padding-top ion-text-center">
+      <ion-label>
+        <h1>Bienvenido a la APP de video juegos</h1>
+        <p>Para entrar debes iniciar secion</p>
+      </ion-label>
+    </ion-title>
+
+
+
+
+   <div  #titulo class="ion-padding-top ion-text-center">
+    <ion-label >
+      <img src='assets/IMG/mujeres-videojuegos-12.jpg' style='width: 30% ; border: 2px solid black'>
+  </ion-label>
+
+   </div>
+  </div>
+  <div class="ion-padding-top ion-text-center">
+    <p>
+      Ingresa tus credenciales de acceso
+    </p>
+  </div>
+
+<ion-card-content>
+  <ion-item >
+    <ion-label position="floating">Usuario</ion-label>
+
+    <ion-input #titulo2 type="text" [(ngModel)]="usuario.us"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating" >Contraseña</ion-label>
+
+    <ion-input #titulo1 type="password" [(ngModel)]="usuario.clave" #titulo></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col size="12">
+
+      <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+    </ion-col>
+    <ion-col size="12">
+      <ion-button shape="block"  (click)="limpiarFormulario()" id="limpiar1">
+        Limpiar
+      </ion-button>
+
+    </ion-col>
+  </ion-row>
+</ion-card-content>
+<div class="ion-padding-top ion-text-center">
+  <ion-label >
+    <br>
+    <a routerLink="/pass">Si olvidaste tu contraseña, haz clicl aqui</a>
+  </ion-label>
+</div>
+
+
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-left ion-text">
+      Ps4 y Ps5
+    </ion-title>
+
+
+  </ion-toolbar>
+</ion-footer>
+
